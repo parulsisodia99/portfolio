@@ -1,0 +1,39 @@
+$(document).ready(function() {
+
+    //Get window Height And Parallex Effect
+    if ( $(window).width() > 1024) {
+        var h= $(window).height();   // returns height of browser viewport
+        $('.parallaxbg').parallax("50%", 0.5);
+        $('.parallaxbg1').parallax("50%", 0.5);
+    }
+
+    $(".toggle-btn").click(function () {
+        $(".left-menu").toggleClass("hidemenu");
+        $("section").toggleClass("Sectionfull");
+        $(".toggle-btn").toggleClass("hidemenu");
+
+    });
+
+    $(".view-btn").click(function(){
+        $(".portfolio-row").toggleClass("portfolio-row-full");
+        $(".view-btn").hide();
+        });
+
+
+
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+
+
+});
+
