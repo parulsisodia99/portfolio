@@ -147,10 +147,10 @@ Slider Section
 }
 .user-pic{
     width: 250px;
-    height: 250px;
+    height: 240px;
     background: url("Parul.jpg") no-repeat;
     background-size: cover;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     overflow: hidden;
     display: inline-block;
     border-radius:50% ;
@@ -168,7 +168,7 @@ Slider Section
     font-size: 60px;
     color: #000;
     font-weight: 500;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
 }
 .degination-list{
     display: inline-block;
